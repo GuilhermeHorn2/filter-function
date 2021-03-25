@@ -1,0 +1,24 @@
+/* I want to grab just the even numbers from a list */
+
+/* Using for loop: */
+
+nums = [0,2,3,6,7];
+result = [];
+for (let i =0;i<nums.length;i++){
+ if (nums[i] % 2 ===0){
+  result.push(nums[i]);
+ }
+ return result;
+}
+
+/* Using filter function */
+
+nums = [0,2,3,6,7];
+const arr2 = nums.filter(function(n)
+{
+ if (n % 2 === 0){
+  return true;
+ }
+  return false; 
+})
+ 
